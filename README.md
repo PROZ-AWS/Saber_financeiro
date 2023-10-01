@@ -1,7 +1,7 @@
 # Saber_financeiro
 
 <p>
-  <img src="URL_DO_SEU_ICONE" alt="Ícone do Meu Site" width="80" height="80">
+  <img src="img/logo_saber.svg" alt="Ícone do Meu Site" width="80" height="80">
 </p>
 
 
