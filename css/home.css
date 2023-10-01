@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    font-family: 'Barrio', cursive;
+}
+
+header{
+    background-color: gray;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.5rem;
+    
+}
+
+a{
+    color: inherit;
+}
+.img-header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-header{
+    max-width: 70px;
+    max-height: 70px;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: orange;
+    transition: .5s;
+}
+
+.botons-header{
+    display: flex;
+    gap: 1.5rem;
+}
+
+button{
+    padding: 1rem;
+    font-size: .9rem;
+    font-family: 'Barrio', cursive;
+    border-radius: .5px;
+    cursor: pointer;
+}
+
+.bt{
+    background-color: transparent;
+}
+
+.bt:hover{
+    background-color: orange;
+}
+
+.home{
+    font-size: 2.5rem;
+    padding-left: 30rem;
+    padding-right: 40rem;
+    min-height: 800px;
+    text-wrap:wrap;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    background-image: url(./img/fundo_home.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sobre{
+    font-size: 1.5rem;
+    padding-left: 30rem;
+    padding-right: 32rem;
+    min-height: 800px;
+    background-image: url(./img/fundo_sobrenos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container-sobrenos{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    padding-top: 5rem;
+}
+
+#logo-direita{
+    align-items: end;
+    width: 70px;
+    height: 80px;
+}
+
+.fotos-nos{
+    padding-top: 5rem;
+    display: flex;
+    padding-left: 7rem;
+    text-align: center;
+}
+
+#vc{
+    margin-top: 3rem;
+}
+
+#sg{
+    padding-left: 2rem;
+}
+
+#gb{
+    margin-top: 10rem;
+}
+
+#ed{
+    margin-top: 12rem;
+}
+.investimentos{
+    font-size: 2rem;
+    padding-left: 30rem;
+    padding-right: 30rem;
+    min-height: 800px;
+    background-image: url(./img/fundo_invest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#container-invet{
+    font-size: 1.5rem;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 570px;
+    margin-top: 7rem;
+    align-items: baseline;
+    padding-left: 2rem;
+}
+
+.continvest {
+    margin-top: 4rem;
+    display: flex;
+    padding-right: 5rem;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+.link-invest{
+    text-align: center;
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+footer{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem;
+    align-items: center;
+    justify-content: center;
+}
