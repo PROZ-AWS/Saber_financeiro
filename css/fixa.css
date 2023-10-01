@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    font-family: 'Barrio', cursive;
+}
+
+#topo{
+    font-size: 50px;
+    padding: 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .triangulo-container {
+    background-color: #00C16C;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.triangulo-container::before,
+.triangulo-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.triangulo-container::before {
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px 10px 0 10px;
+    border-color: #00C16C transparent transparent transparent;
+} */
+
+/* .triangulo-container::after {
+    left: 50%;
+    margin-left: -10px;
+    bottom: 0;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #00C16C transparent;
+}
+
+.triangulo-texto {
+    position: relative;
+    z-index: 1;
+} */
+
+.article{
+    border-right: 4px solid purple;
+    border-left: 4px solid greenyellow;
+    color: black;
+    max-width: 80%;
+    text-align: start;
+    margin: auto;
+    padding-top: 5%;
+    font-size: 32px;
+    border-radius: 7%;
+}
+
+
+.article a, ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: #9045E3;
+
+}
+.article p a{
+    color: #9045E3;
+}
+
+a:hover{
+    border-bottom: 4px solid #C676F1;
+}
+
+.voltar{
+    outline: none;
+    border: 0;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 4px solid greenyellow;
+    cursor: pointer;
+    z-index: 999;
+    visibility: hidden;
+}
+.voltar.active{
+    visibility: visible;
+    opacity: 1;
+}
