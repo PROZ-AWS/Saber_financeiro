@@ -5,14 +5,25 @@
 <meta name="viewport" content="width=device-width,initial=scale=1.0">
 <link rel="stylesheet" href="css/renda_variavel.css">
 <title>Renda Variável</title>
+<script src="js/menu.js" defer></script>
+<script src="js/voltar.js" defer></script>
 </head>
 
 <header>
+    <button class="hamburger">&#9776;</button>
+    <div class="sidebar">
+        <ul>
+            <li><a href="Renda fixa.html">Renda fixa</a></li>
+            <li><a href="renda_variavel.html">Renda variavel</a></li>
+            <li><a href="#">Sobre Nos</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </div>
     <h1>Saber Financeiro</h1>
 </header>
     <div class="imagem-com-texto-um">
         <img src="img/1-removebg-preview.png" alt="tag01">
-        </div>
+    </div>
 
         <h2> EXEMPLOS DE <br> RENDA VARIÁVEL</h2>   
 
@@ -42,9 +53,6 @@
             <div xmlns="http://www.w3.org/1999/xhtml">
                 <button class="botao-interativo-sete">NASDAQ</button>
             </div>
-            
-        
-
       </svg>
       <div class="voltar-home">
         <a href="paginaanterior.html">
@@ -55,6 +63,9 @@
         </a>
 
       </div>
+      <button class="voltar" onclick="voltar_topo()">
+        <img src="img/Arrow_top.svg" alt="voltar">
+    </button>
 
     </header>
     

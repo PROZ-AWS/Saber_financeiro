@@ -3,6 +3,8 @@
 
 
 body {
+    padding: 0;
+    margin: 0;
     font-family: 'Barrio', cursive;
     font-size: 48px, /* Substitua 'Nome da Fonte' pelo nome real da fonte que você escolheu */
 }
@@ -15,13 +17,82 @@ h1 {
     font-size: 64px;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
 
+.hamburger {
+    cursor: pointer;
+    font-size: 100px;
+    padding: 5px 90px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 104, 59, 0.7);
+    overflow-x: hidden;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+    z-index: 700;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.sidebar ul li{
+    padding: 15px;
+    text-decoration: none;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    border-bottom: 4px solid #9a51c2;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.open {
+    width: 15%;
+}
+
+.imagem-com-texto-um{
+    display: flex;
+    justify-content: center;
+}
+
+.sgv-dois{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .imagem-com-texto-um img {
-    position: absolute; /* Defina a posição como absoluta para mover a imagem de forma precisa */
-    margin-right: 190px;
-    margin-left: 190px;
-    top: 10px; /* Mover a imagem 10 pixels para baixo (ajuste conforme necessário) */
+    position: absolute; 
+    top: 10px;
     width: 1600px;
     height: 1100px;
     fill: none;
@@ -193,4 +264,27 @@ footer {
     }
     
     
+}
+.voltar{
+    outline: none;
+    border: 0;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 4px solid greenyellow;
+    cursor: pointer;
+    z-index: 999;
+    visibility: hidden;
+}
+.voltar.active{
+    visibility: visible;
+    opacity: 1;
 }

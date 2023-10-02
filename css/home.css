@@ -61,6 +61,61 @@ nav{
     gap: 1.5rem;
 }
 
+.hamburger {
+    cursor: pointer;
+    font-size: 60px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 104, 59, 0.7);
+    overflow-x: hidden;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.sidebar ul li{
+    padding: 15px;
+    text-decoration: none;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    border-bottom: 4px solid #9a51c2
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.open {
+    width: 15%;
+}
+
 button{
     padding: 1rem;
     font-size: .9rem;
@@ -86,7 +141,7 @@ button{
     text-align: start;
     display: flex;
     align-items: center;
-    background-image: url(./img/fundo_home.png);
+    background-image: url(../img/fundo_home.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -96,7 +151,7 @@ button{
     padding-left: 30rem;
     padding-right: 32rem;
     min-height: 800px;
-    background-image: url(./img/fundo_sobrenos.png);
+    background-image: url(../img/fundo_sobrenos.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -141,7 +196,7 @@ button{
     padding-left: 30rem;
     padding-right: 30rem;
     min-height: 800px;
-    background-image: url(./img/fundo_invest.png);
+    background-image: url(../img/fundo_invest.png);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -179,4 +234,28 @@ footer{
     padding: 5rem;
     align-items: center;
     justify-content: center;
+}
+
+.voltar{
+    outline: none;
+    border: 0;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 4px solid greenyellow;
+    cursor: pointer;
+    z-index: 999;
+    visibility: hidden;
+}
+.voltar.active{
+    visibility: visible;
+    opacity: 1;
 }
