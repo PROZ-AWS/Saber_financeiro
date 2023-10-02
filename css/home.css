@@ -16,7 +16,7 @@ body{
 }
 
 header{
-    background-color: gray;
+    background-color: rgb(237, 237, 237);
     display: flex ;
     justify-content: center;
     align-items: center;
