@@ -1,0 +1,25 @@
+h1 {
+    font-family: Barrio;
+    text-align: center;
+    background-image: ("Vector.png");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+#suelen {
+    text-align: right;
+}
+
+#gabriel {
+    text-align: right;
+}
+
+#logosaber {
+    position: absolute;
+    right: 20px;
+
+}
