@@ -1,0 +1,201 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+
+/* Reset de margens e preenchimento padrão */
+body, h1, h2  {
+    
+    padding: 0;
+    font-family: 'Barrio', cursive;
+    font-size: 60px;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4ece9; /* Cor do SVG */
+    color:black;
+}
+
+
+
+p {
+    
+    letter-spacing: 2px; /* Adiciona 2 pixels de espaço entre as letras */
+} 
+
+
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #63aa8d; /* Cor mais escura para o cabeçalho */
+    text-align: center;
+    padding: 30px;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    text-align: center;
+    font-family: 'Barrio', cursive;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: rgb(6, 104, 30);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* estilos para o alerta*/
+
+.alerta {
+   width: 700px; /* Ajuste a largura conforme necessário */
+   height: 450px; /* Ajuste a altura conforme necessário */
+   position: relative;
+   margin: 0 auto;
+   text-align: center;
+   display: flex;
+   
+}
+
+.imagem-esquerda {
+    position: absolute;
+    left: 800px;
+    top: 0;
+    width: 250px; /* Largura desejada */
+    height: 250px; /* Altura desejada */
+}
+
+.imagem-direita {
+    position: absolute;
+    right: 800px;
+    top: 0;
+    width: 250px; /* Largura desejada */
+    height: 250px; /* Altura desejada */
+}
+
+.alerta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 3px solid red;
+    animation: piscar 1s infinite;
+}
+
+@keyframes piscar {
+    0%, 50% {
+        opacity: 0;
+    }
+    51%, 100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 30px;
+    text-align: center;
+    background-color: #f5f5f5; /* Fundo cinza claro para destacar o conteúdo */
+    border-radius: 10px; /* Cantos arredondados para o contêiner principal */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+section {
+    margin: 20px 0; /* Reduzido o espaçamento entre as seções */
+    text-align: left; /* Texto alinhado à esquerda para melhor legibilidade */
+}
+
+h2 {
+    font-size: 40px; /* Aumento do tamanho da fonte para os títulos */
+    color: #333; /* Cor mais escura para o título */
+    margin: center; /* Centraliza o título horizontalmente */
+}
+
+p {
+    font-size: 20px; /* Aumento do tamanho da fonte para o texto */
+    line-height: 1.6; /* Espaçamento entre as linhas aumentado para melhor legibilidade */
+    color: #666; /* Cor um pouco mais escura para o texto */
+}
+
+
+ /* calculadora de rendimento  */
+
+#calculadora {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 2px solid yellow; /* Adiciona uma borda amarela */
+    padding: 20px;
+    margin: 20px;
+}
+
+#calculadora h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#resultado span {
+    color: #00C16C;
+    font-weight: bold;
+    font-size: 20px;
+}
