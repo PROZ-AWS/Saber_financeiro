@@ -52,7 +52,7 @@ nav{
 }
 
 .nav-link:hover{
-    color: orange;
+    color: green;
     transition: .5s;
 }
 
@@ -98,7 +98,7 @@ nav{
     text-decoration: none;
 }
 .sidebar ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -170,27 +170,21 @@ button{
 }
 
 .fotos-nos{
-    padding-top: 5rem;
+    padding-top: 2.5rem;
     display: flex;
-    padding-left: 7rem;
     text-align: center;
+    overflow: hidden;
+    margin-left: 250px;
+    height: 400px;
+    width: 600px;
 }
 
-#vc{
-    margin-top: 3rem;
+.container-fotos{
+    display: flex;
+    transition: transform 1s ease-in-out;
+    transform: translateX(0);
 }
 
-#sg{
-    padding-left: 2rem;
-}
-
-#gb{
-    margin-top: 10rem;
-}
-
-#ed{
-    margin-top: 12rem;
-}
 .investimentos{
     font-size: 2rem;
     padding-left: 30rem;

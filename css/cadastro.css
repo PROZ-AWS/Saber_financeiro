@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Barrio', cursive;
+}
+
+header{
+    background-color: rgb(237, 237, 237);
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    font-size: 1.5rem;
+    
+}
+
+.img-header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-header{
+    max-width: 70px;
+    max-height: 70px;
+    height: 100%;
+}
+
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+  label {
+    margin-bottom: .2rem;
+    position: relative;
+  }
+  
+  label:not(:first-of-type){
+    margin-top: 1rem;
+  }
+
+h2{
+    margin: 20px;
+    color: orange;
+    text-align: center;
+}
+
+button{
+    margin: 40px;
+    font-size: 17px;
+    background-color: green;
+    color: white;
+}
+
+/* ---------- Estilos dinâmicos ---------- */
+.required-popup::after {
+    content: "*Campo obrigatório";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #DFDFDF;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+  }
+  
+  input.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+  }
+  
+  input.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+  }
+  
+  .visible {
+    display: block;
+  }

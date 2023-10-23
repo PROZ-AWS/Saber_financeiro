@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR ">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +9,7 @@
     <script src="js/script.js" defer></script>
     <script src="js/voltar.js"defer></script>
     <script src="js/menu.js" defer></script>
+    <script src="./js/carrossel_home.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,8 +32,8 @@
             <a href="#contato" class="nav-link">Contato</a>
         </nav>
         <div class="botoes-header">
-            <button class="bt">Cadastrar</button>
-            <button class="bt">Entrar</button>
+            <a href="cadastro.html"><button class="bt">Cadastrar</button></a>
+            <a href="entrar.html"><button class="bt">Entrar</button></a>
         </div>
     </header>
     <main>
@@ -46,25 +47,12 @@
                 <img id="logo-direita" src="img/logo_saberfinanceiro.png" alt="logo">
             </section>
             <div class="fotos-nos">
-                <div id="vc">
-                    <img src="./img/VC.png" alt="Vinicius Conessa">
-                    <p>Vinicius Conessa</p>
-                </div>
-                <div id="sg">
-                    <img src="./img/SG.png" alt="Suelen Guariz">
-                    <p>Suelen Guariz</p>
-                </div>
-                <div id="gb">
-                    <img src="./img/GM.png" alt="Gabriel Menezes">
-                    <p>Gabriel Menezes</p>
-                </div>
-                <div id="ib">
-                    <img src="./img/IB.png" alt="Isabele Barros">
-                    <p>Isabele Barros</p>
-                </div>
-                <div id="ed">
-                    <img src="./img/ER.png" alt="Eduarda Reis">
-                    <p>Eduarda Reis</p>
+                <div class="container-fotos" id="img">
+                    <img src="./img/fotoSobreNosViniciusc.png" alt="Vinicius Conessa">
+                    <img src="./img/fotoSobreNos__gabriel.png" alt="Gabriel Menezes">
+                    <img src="./img/fotoSobreNos_Suelen.png" alt="Suelen Guariz">
+                    <img src="./img/fotoSobreNos Isabela.png" alt="Isabela Barros">
+                    <img src="./img/fotoSobreNos_Eduarda.png" alt="Eduarda Reis">
                 </div>
             </div>
         </section>
