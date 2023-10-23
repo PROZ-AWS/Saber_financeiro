@@ -8,20 +8,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/fixa.css">
     <script src="js/voltar.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/exibir.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
     <div id="main">
         <div id="header">
+            <button class="hamburger">&#9776;</button>
+            <div class="sidebar">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="renda_variavel.html">Renda Variavel</a></li>
+                    <li><a href="#">Sobre Nos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
             <div id="topo">
                 <h1>Renda fixa</h1>
                 <img src="img/logo_financeiro.svg" alt="Logo" height="100px">
             </div>
         </div>
         <div class="article">
-            <!-- <div class="triangulo"></div> -->
-            <div class="triangulo-container">
-                <div class="triagulo-texto">
+            <div class="article_container">
+                <img src="img/background_fixa.png" alt="">
+                <div class="texto">
                     <p> A renda fixa é um segmento de investimento em que o retorno financeiro é determinado com
                         antecedência, oferecendo maior previsibilidade em comparação com a renda variável. Envolve a compra
                         de títulos emitidos por governos, empresas ou instituições financeiras. Estes títulos funcionam
@@ -29,15 +41,16 @@
                         principal de volta em uma data futura. Os principais tipos de títulos de renda fixa incluem títulos
                         públicos e títulos privados. </p>
                 </div>
-                <div class="triangulo-texto">
+                <div class="exemplos">
                     <h2>Alguns Exemplos:</h2>
                     <ul>
-                        <li><a href="#t_publico">Titulos Públicos</a></li>
-                        <li><a href="#t_privado">Titulos Privados</a></li>
+                        
+                        <li><span class="material-symbols-outlined">monetization_on</span><a href="#t_publico">Titulos Públicos</a></li>
+                        <li><span class="material-symbols-outlined">point_of_sale</span><a href="#t_privado">Titulos Privados</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="article">
+            <div class="article" id="content">
                 <h2 id="t_publico">Titulos Públicos</h2>
                 
                 <p> Os títulos públicos são emitidos pelo governo de um país. Eles são considerados investimentos de
@@ -58,25 +71,38 @@
                 <p> Os títulos privados são emitidos por empresas ou instituições financeiras para financiar suas
                     operações ou projetos. Eles podem oferecer retornos potencialmente mais elevados em comparação com
                     títulos públicos, mas também apresentam maior risco de crédito, uma vez que dependem da capacidade
-                    da empresa de honrar seus compromissos. Alguns exemplos de títulos privados incluem: </p>
+                    da empresa de honrar seus compromissos. Alguns exemplos de títulos privados incluem:
+                    <a class="ler_mais" onclick="toggleTextoOculto()">
+                        Ler Mais
+                    <a> </p>
 
-                <p> 1. <b><a href="https://web.xpi.com.br/empresas/mercado-de-capitais/debentures/"
-                            target="_blank">Debêntures:</a></b>São títulos de dívida emitidos por empresas para
-                    arrecadar capital. Eles oferecem rendimentos fixos ou variáveis e têm prazos de vencimento
-                    definidos. </p>
+                <p class="conteudo_oculto"> 1. <b><a href="https://web.xpi.com.br/empresas/mercado-de-capitais/debentures/"
+                            target="_blank">Debêntures:</a></b>são títulos de dívida emitidos por empresas ou instituições para captar 
+                            recursos no mercado financeiro. Elas representam um empréstimo feito pelo investidor à empresa emissora, que 
+                            se compromete a pagar juros periódicos e devolver o valor investido no vencimento. As debêntures podem ser 
+                            uma opção de investimento interessante para quem busca 
+                            diversificação na carteira e uma alternativa aos tradicionais investimentos em ações e títulos públicos.</p>
 
-                <p> 2. <b><a href="https://conteudos.xpi.com.br/aprenda-a-investir/relatorios/cdb-xp-230/" target="_blank">CDBs (Certificados de Depósito Bancário):</a></b> Emitidos por bancos, os CDBs são investimentos
-                    populares que oferecem uma taxa de juros em troca do dinheiro depositado. Eles são segurados pelo
-                    Fundo Garantidor de Créditos (FGC) em caso de falência do banco. </p>
+                <p class="conteudo_oculto"> 2. <b><a href="https://conteudos.xpi.com.br/aprenda-a-investir/relatorios/cdb-xp-230/" target="_blank">CDBs (Certificados de Depósito Bancário):</a></b> é um título de renda fixa emitido por bancos no Brasil. 
+                    Os investidores emprestam dinheiro para o banco e, em troca, recebem juros por um período específico, geralmente 
+                    definido no momento da compra. É uma opção de investimento considerada segura, uma vez que os CDBs costumam contar com a proteção do Fundo Garantidor de 
+                    Créditos (FGC) para valores de até R$ 250.000 por CPF e por instituição financeira. Os rendimentos dos CDBs podem variar conforme a instituição emissora, o prazo e a taxa de juros acordados no 
+                    momento da compra. Eles podem ser uma alternativa interessante para quem busca uma opção de renda fixa com diferentes prazos e rentabilidades.</p>
 
-                <p> 3. <b><a href="https://conteudos.xpi.com.br/aprenda-a-investir/relatorios/lci/" target="_blank">LCIs (Letras de Crédito Imobiliário) e LCAs (Letras de Crédito do Agronegócio):</a></b>São títulos
-                    emitidos por instituições financeiras para financiar o setor imobiliário (LCIs) ou o agronegócio
-                    (LCAs). Geralmente, eles são isentos de Imposto de Renda e também são protegidos pelo FGC. </p>
+                <p class="conteudo_oculto"> 3. <b><a href="https://conteudos.xpi.com.br/aprenda-a-investir/relatorios/lci/" target="_blank">LCIs (Letras de Crédito Imobiliário) e LCAs (Letras de Crédito do Agronegócio):</a></b>são investimentos de renda fixa no Brasil, emitidos por 
+                    instituições financeiras, LCI está vinculada ao mercado imobiliário, financiando empreendimentos nesse setor, enquanto LCA está relacionada 
+                    ao agronegócio, apoiando projetos agropecuários. Além disso, tanto as LCIs quanto as LCAs proporcionam isenção de Imposto de Renda para pessoas físicas, o que torna os rendimentos líquidos mais atrativos.
+                    Os investidores recebem juros com base em taxas pré ou pós-fixadas, geralmente vinculadas ao CDI (Certificado de Depósito Interbancário) ou a índices de mercado. 
+                    Os prazos e valores mínimos de aplicação podem variar, 
+                    oferecendo flexibilidade aos investidores.</p>
 
-                <p> 4. <b><a href="https://conteudos.xpi.com.br/aprenda-a-investir/relatorios/o-que-e-cri/" target="_blank">CRI (Certificado de Recebíveis Imobiliários) e CRA (Certificado de Recebíveis do
-                    Agronegócio):</a></b>São títulos lastreados em recebíveis de empréstimos imobiliários (CRI) ou
-                    agronegócio (CRA). Eles são emitidos por securitizadoras e oferecem rendimentos baseados nos
-                    pagamentos dos recebíveis. </p>
+                <p class="conteudo_oculto"> 4. <b><a href="https://conteudos.xpi.com.br/aprenda-a-investir/relatorios/o-que-e-cri/" target="_blank">CRI (Certificado de Recebíveis Imobiliários) e CRA (Certificado de Recebíveis do
+                    Agronegócio):</a></b>são títulos de renda fixa emitidos por securitizadoras que representam créditos originados em empréstimos 
+                    imobiliários e do agronegócio, 
+                    respectivamente. Ambos permitem 
+                    que esses créditos sejam transformados em títulos negociáveis 
+                    no mercado de capitais, proporcionando uma fonte alternativa 
+                    de financiamento para os setores. Os CRIs são lastreados em créditos imobiliários, como financiamentos para construção ou imóveis, enquanto os CRAs representam créditos do agronegócio, como empréstimos a produtores rurais. Ambos oferecem retornos aos investidores por meio de juros ou indexação a índices, como o IPCA, e costumam ter prazos de médio a longo prazo. A vantagem desses investimentos é a isenção de Imposto de Renda para pessoas físicas, o que os torna atrativos, mas a qualidade do lastro e a solidez da securitizadora são fatores cruciais a serem considerados antes de investir, uma vez que a inadimplência nos créditos subjacentes pode afetar o pagamento de juros e o valor dos títulos. Portanto, os investidores devem avaliar cuidadosamente esses elementos e as condições de mercado ao escolher entre CRIs e CRAs.</p>
 
                 <button class="voltar" onclick="voltar_topo()">
                     <img src="img/Arrow_top.svg" alt="voltar">
