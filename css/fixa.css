@@ -21,6 +21,101 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+.hamburger {
+    cursor: pointer;
+    font-size: 80px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 104, 59, 0.7);
+    overflow-x: hidden;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.sidebar ul li{
+    padding: 15px;
+    text-decoration: none;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.close{
+    display: none;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.open {
+    width: 15%;
+}
+
+/* .triangulo-container {
+    background-color: #00C16C;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.triangulo-container::before,
+.triangulo-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.triangulo-container::before {
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px 10px 0 10px;
+    border-color: #00C16C transparent transparent transparent;
+} */
+
+ /* .triangulo-container::after {
+    left: 50%;
+    margin-left: -10px;
+    bottom: 0;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #00C16C transparent;
+}
+
+.triangulo-texto {
+    position: relative;
+    z-index: 1;
+} */ 
+
 .article{
     border-right: 4px solid purple;
     border-left: 4px solid greenyellow;
@@ -37,15 +132,58 @@ body{
 .article a, ul{
     list-style-type: none;
     text-decoration: none;
-    color: #9045E3;
+    color: #019492;
 
 }
+
+#content p{
+    font-family: sans-serif;
+}
+
 .article p a{
-    color: #9045E3;
+    color: #019492;
+}
+
+.article_container{
+    position: relative;
+}
+
+.conteudo_oculto{
+    display: none;
+}
+
+.ler_mais{
+    cursor: pointer;
+}
+
+.texto{
+    z-index: 1;
+    width: 54%;;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: left;
+    transform: translate(-89%, -70%);
+    /* color: white; */
+}
+.article_container img{
+    width: 84%;
 }
 
 a:hover{
-    border-bottom: 4px solid #9a51c2;
+    border-bottom: 4px solid #18bbc3;
+}
+
+.exemplos h2{
+    margin-left: 5px;
+}
+
+.exemplos ul{
+    display: flex;
+}
+
+.exemplos li{
+    margin: 10px;
 }
 
 .voltar{
