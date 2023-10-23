@@ -40,7 +40,64 @@ h2 {
   
 }
 
+.hamburger {
+    position: absolute;
+    top: 25px;
+    cursor: pointer;
+    font-size: 90px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
 
+.hamburger:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 104, 59, 0.7);
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 20;
+    backdrop-filter: blur(5px);
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.sidebar ul li{
+    padding: 15px;
+    text-decoration: none;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.close{
+    display: none;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    padding: 15px;
+}
+
+.open {
+    width: 15%;
+}
 
 .sgv-dois {
     position: absolute; 
