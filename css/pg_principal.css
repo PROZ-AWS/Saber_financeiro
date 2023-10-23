@@ -1,0 +1,209 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+
+body {
+    font-family: 'Barrio', cursive;
+    font-size: 48px, /* Substitua 'Nome da Fonte' pelo nome real da fonte que você escolheu */
+}
+
+
+h1 {
+    color: #010802;
+    text-align: right;
+    margin-right: 200px;
+    font-size: 64px;
+}
+
+.imagem-com-texto-um img {
+    display:flex;
+    justify-content: center;
+
+}
+
+
+.imagem-com-texto-um img {
+    position: absolute; /* Defina a posição como absoluta para mover a imagem de forma precisa */
+    margin-right: 190px;
+    margin-left: 190px;
+    top: 10px; /* Mover a imagem 10 pixels para baixo (ajuste conforme necessário) */
+    width: 1600px;
+    height: 1100px;
+    fill: none;
+}
+h2 {
+    font-size: 62px; /* Tamanho da fonte desejado */
+    color:black; /* Cor do texto desejada */
+    text-align: left; /* Alinhamento de texto desejado, como "center" para centralizar */
+    margin: 190px;
+    margin-top: 1100px;
+  
+}
+
+
+
+.sgv-dois {
+    position: absolute; 
+    margin-right: 190px;
+    margin-left: 190px;/* Necessário para posicionar elementos filhos */
+    top: 1200px;
+}
+
+.voltar-home {
+    position: absolute; /* Use 'absolute' para posicionar o elemento em relação ao pai (.svg-dois) */
+    top: 2000px;
+    
+}
+
+        /*botao açoes*/
+.botao-interativo-um {
+    width: 150px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1600px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 80%;
+    font-size: 30px;
+    left: 70%;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+    font-family: 'Barrio', cursive;
+}
+      /*botao fiis*/
+.botao-interativo-dois {
+    width: 150px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1300px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 500px;
+    font-size: 30px;
+    left: 70%;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+    font-family: 'Barrio', cursive;
+}
+    /*botao bdr*/
+.botao-interativo-tres {
+    width: 150px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1900px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 70%;
+    font-size: 30px;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+}
+   /*botao etf*/
+.botao-interativo-quatro {
+    width: 150px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1600px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 900px;
+    font-size: 30px;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+    font-family: 'Barrio', cursive;
+}
+   /*botao ibov*/
+.botao-interativo-cinco {
+    width: 150px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1600px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 300px;
+    font-size: 30px;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+    font-family: 'Barrio', cursive;
+}
+  /* botao commodities*/
+.botao-interativo-seis {
+    width: 160px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1700px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 630px;
+    font-size: 25px;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+    font-family: 'Barrio', cursive;
+}
+   /* botao nasdaq*/
+.botao-interativo-sete {
+    width: 150px;
+    height: 150px;
+    stroke: black;
+    stroke-width: 4;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 1500px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 630px;
+    font-size: 30px;
+    background-color: rgb(122, 194, 8);
+    font-weight: bold;
+    font-family: 'Barrio', cursive;
+}
+
+footer {
+    font-size: 40px; /* Ajuste o valor conforme necessário para aumentar o tamanho da letra */
+    top: 2200px; /* Altere a coordenada Y (vertical) conforme necessário */
+    left: 500px;
+    position: absolute;
+}
+
+/* comnando responsivo*//* Estilos para dispositivos móveis */
+
+@media (min-width: 768px) {
+    /* Estilos para tablets pequenos na orientação retrato */
+    h2 {
+        width: 100%;
+        background-image: none;
+       
+    }
+    .imagem-com-texto-um img{
+        display: block;
+        background-image: none;
+        margin: 2em 2em ;
+    }
+    .sgv-dois {
+        width: auto;
+        margin-left: 3em;
+        margin-right: 5em;
+        text-align: center;
+    }
+    .voltar-home {
+        width: auto;
+        margin: 3em 3em ;
+    }
+    footer{
+        width: auto;
+        margin: 2em 2em ;
+    }
+    
+    
+}
