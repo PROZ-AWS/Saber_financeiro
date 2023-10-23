@@ -81,49 +81,6 @@ body{
     width: 15%;
 }
 
-.hamburger {
-    position: absolute;
-    top: 71px;
-    cursor: pointer;
-    font-size: 90px;
-    padding: 5px 10px;
-    background: none;
-    border: none;
-    outline: none;
-    color: #333;
-    transition: transform 0.3s ease;
-}
-
-.hamburger:hover {
-    transform: scale(1.2);
-}
-
-.sidebar {
-    width: 0;
-    height: 0;
-    border-style: solid;
-}
-
-.triangulo-container::before {
-    left: 50%;
-    margin-left: -10px;
-    border-width: 10px 10px 0 10px;
-    border-color: #00C16C transparent transparent transparent;
-} */
-
-/* .triangulo-container::after {
-    left: 50%;
-    margin-left: -10px;
-    bottom: 0;
-    border-width: 0 10px 10px 10px;
-    border-color: transparent transparent #00C16C transparent;
-}
-
-.triangulo-texto {
-    position: relative;
-    z-index: 1;
-} */
-
 .article{
     border-right: 4px solid purple;
     border-left: 4px solid greenyellow;
