@@ -23,8 +23,10 @@ body{
 }
 
 .hamburger {
+    position: absolute;
+    top: 71px;
     cursor: pointer;
-    font-size: 80px;
+    font-size: 90px;
     padding: 5px 10px;
     background: none;
     border: none;
@@ -46,6 +48,7 @@ body{
     background-color: rgba(4, 104, 59, 0.7);
     overflow-x: hidden;
     transition: 0.3s;
+    z-index: 20;
     backdrop-filter: blur(5px);
 }
 
@@ -78,19 +81,24 @@ body{
     width: 15%;
 }
 
-/* .triangulo-container {
-    background-color: #00C16C;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    position: relative;
+.hamburger {
+    position: absolute;
+    top: 71px;
+    cursor: pointer;
+    font-size: 90px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: transform 0.3s ease;
 }
 
-.triangulo-container::before,
-.triangulo-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
+.hamburger:hover {
+    transform: scale(1.2);
+}
+
+.sidebar {
     width: 0;
     height: 0;
     border-style: solid;
@@ -103,7 +111,7 @@ body{
     border-color: #00C16C transparent transparent transparent;
 } */
 
- /* .triangulo-container::after {
+/* .triangulo-container::after {
     left: 50%;
     margin-left: -10px;
     bottom: 0;
@@ -114,7 +122,7 @@ body{
 .triangulo-texto {
     position: relative;
     z-index: 1;
-} */ 
+} */
 
 .article{
     border-right: 4px solid purple;
