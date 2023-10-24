@@ -26,19 +26,51 @@
     <h1>Contato</h1>
     
     <form action="processar_formulario.php" method="post">
-        <label for="nome">Seu nome:</label>
-        <input type="text" id="nome" name="nome" required>
+        <label for="nome">Seu nome <span class="required">*</span>:</label>
+        <input type="text" id="nome" name="nome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" required>
         
         <label for="sobrenome">Sobrenome:</label>
-        <input type="text" id="sobrenome" name="sobrenome" required>
+        <input type="text" id="sobrenome" name="sobrenome" pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+" required>
         
-        <label for="email">Seu E-mail:</label>
+        <label for="email">Seu E-mail<span class="required">*</span>:</label>
         <input type="email" id="email" name="email" required>
         
-        <label for="mensagem">Nos conte sua dúvida ou deixe sugestões:</label>
+        <label for="mensagem">Nos conte sua dúvida ou deixe sugestões<span class="required">*</span>:</label>
         <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <div id="error-message"></div>
         
         <input type="submit" value="Enviar">
     </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function (e) {
+          e.preventDefault();
+  
+          const nome = document.querySelector("#nome").value;
+          const sobrenome = document.querySelector("#sobrenome").value;
+          const email = document.querySelector("#email").value;
+          const mensagem = document.querySelector("#mensagem").value;
+  
+          const errorMessage = document.querySelector("#error-message");
+          errorMessage.innerHTML = "";
+  
+          if (
+            nome === "" ||
+            sobrenome === "" ||
+            email === "" ||
+            mensagem === ""
+          ) {
+            errorMessage.innerHTML = "Por favor, preencha todos os campos.";
+          } else if (!isValidEmail(email)) {
+            errorMessage.innerHTML =
+              "Por favor, insira um endereço de e-mail válido.";
+          } else {
+            this.submit();
+          }
+        });
+        function isValidEmail(email) {
+          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        }
+      </script>
 </body>
 </html>
