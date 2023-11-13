@@ -59,6 +59,90 @@ nav a {
     font-size: 35px;
 }
 
+.hamburger {
+    position: absolute;
+    top: 47%;
+    right: 95%;
+    cursor: pointer;
+    font-size: 90px;
+    padding: 5px 10px;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.2);
+    background:none;
+}
+
+.sidebar {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(4, 104, 59, 0.7);
+    overflow-x: hidden;
+    transition: 0.3s;
+    backdrop-filter: blur(5px);
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style-type: none;
+    font-size: 32px;
+}
+
+.sidebar ul li{
+    font-family: 'Barrio', cursive;
+    padding: 15px;
+    text-decoration: none;
+    text-align: justify;
+}
+.sidebar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover{
+    border-bottom: 4px solid #9a51c2;
+}
+
+.close{
+    display: none;
+}
+
+.open {
+    width: 15%;
+}
+
+.voltar{
+    outline: none;
+    border: 0;
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 4px solid greenyellow;
+    cursor: pointer;
+    z-index: 999;
+    visibility: hidden;
+}
+.voltar.active{
+    visibility: visible;
+    opacity: 1;
+}
+
 /* estilos para o alerta*/
 
 .alerta {

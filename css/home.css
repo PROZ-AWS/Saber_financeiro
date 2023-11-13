@@ -98,12 +98,12 @@ nav{
     text-decoration: none;
 }
 .sidebar ul li a{
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .sidebar ul li a:hover{
-    border-bottom: 4px solid #9a51c2
+    border-bottom: 4px solid #9a51c2;
 }
 
 .content {
@@ -177,6 +177,11 @@ button{
     margin-left: 250px;
     height: 400px;
     width: 600px;
+}
+
+.fotos-nos img{
+    width: 50%;
+    height: 50%;
 }
 
 .container-fotos{
