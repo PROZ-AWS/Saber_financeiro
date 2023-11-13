@@ -179,11 +179,6 @@ button{
     width: 600px;
 }
 
-.fotos-nos img{
-    width: 50%;
-    height: 50%;
-}
-
 .container-fotos{
     display: flex;
     transition: transform 1s ease-in-out;
